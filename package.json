@@ -8,19 +8,23 @@
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "mongoose": "^4.9.2",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   },
   "scripts": {
-    "start": "nodemon server",
-    "webpack": "webpack -w",
-    "wds": "webpack-dev-server --progress"
+    "start": "MODE=production node server",
+    "devstart": "MODE=dev nodemon server",
+    "build": "webpack -w",
+    "wds": "MODE=dev webpack-dev-server --progress"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.0",
+    "file-loader": "^0.11.1",
+    "google-fonts-webpack-plugin": "^0.3.2",
     "node-sass": "^4.5.2",
     "nodemon": "^1.11.0",
     "sass-loader": "^6.0.3",
