@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 
-$darkgrey: #444;
+$main: #555;
+$accent: #5ed1ae;
 
 body {
   font-family: Muli, Helvetica, sans-serif;
   padding: 30px;
-  color: $darkgrey;
+  color: $main;
 }
 
 h1 {
   font-family: Futura, "Open Sans", Helvetica, sans-serif;
+}
+
+a {
+  color: $main;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $accent;
 }
 
 @media only screen and (max-width: 450px) {

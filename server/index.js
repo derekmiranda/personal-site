@@ -6,4 +6,4 @@ const app = express();
 
 app.use(express.static('public'));
 
-app.listen(config.port);
+app.listen(config.port, () => console.log(`Listening on ${config.port}`));
