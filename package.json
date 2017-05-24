@@ -1,7 +1,7 @@
 {
   "name": "sample-react-app",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server/index.js",
   "author": "Derek Miranda <derek.miranda.1992@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -13,7 +13,7 @@
     "react-dom": "^15.5.4"
   },
   "scripts": {
-    "start": "MODE=production node server",
+    "start": "node server",
     "devstart": "MODE=dev nodemon server",
     "build": "webpack",
     "watch": "webpack -w",
