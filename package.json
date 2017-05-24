@@ -15,7 +15,8 @@
   "scripts": {
     "start": "MODE=production node server",
     "devstart": "MODE=dev nodemon server",
-    "build": "webpack -w",
+    "build": "webpack",
+    "watch": "webpack -w",
     "wds": "MODE=dev webpack-dev-server --progress"
   },
   "devDependencies": {
