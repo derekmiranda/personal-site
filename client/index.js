@@ -2,11 +2,9 @@ import globalStyle from './css/global.scss';
 
 import React from 'react';
 import { render } from 'react-dom';
+import App from './components/app.jsx';
 
 render(
-  <header>
-    <h1>Derek Miranda</h1>
-    <h2>Software Engineer</h2>
-  </header>,
+  <App />,
   document.getElementById('main')
 );

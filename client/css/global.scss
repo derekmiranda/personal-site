@@ -11,3 +11,10 @@ body {
 h1 {
   font-family: Futura, "Open Sans", Helvetica, sans-serif;
 }
+
+@media only screen and (max-width: 450px) {
+  body {
+    padding: 15px;
+    text-align: center;
+  }
+}
