@@ -13,9 +13,10 @@
     "react-dom": "^15.5.4"
   },
   "scripts": {
+    "postinstall": "yarn build",
     "start": "node server",
     "devstart": "MODE=dev nodemon server",
-    "build": "webpack",
+    "build": "MODE=production webpack",
     "watch": "webpack -w",
     "wds": "MODE=dev webpack-dev-server --progress"
   },
@@ -25,6 +26,7 @@
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
     "google-fonts-webpack-plugin": "^0.3.2",
     "node-sass": "^4.5.2",

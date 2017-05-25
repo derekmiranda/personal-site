@@ -1,8 +1,11 @@
 const path = require('path');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const WDS_PORT = 8000;
+const extractCSS = new ExtractTextPlugin('/styles.css');
 const plugins = [
+  extractCSS,
   new webpack.HotModuleReplacementPlugin(),
 ];
 
@@ -18,8 +21,7 @@ module.exports = {
   ],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public/dist'),
-    publicPath: 'dist'
+    path: path.resolve(__dirname, 'dist'),
   },
   watch: true,
   plugins,
@@ -37,7 +39,11 @@ module.exports = {
       {
         test: /(\.css|\.scss|\.sass)$/,
         include: [path.resolve(__dirname, './client/css')],
-        loaders: ['style-loader', 'css-loader', 'sass-loader'],
+        // loaders: ['style-loader', 'css-loader', 'sass-loader'],
+        use: extractCSS.extract({
+          fallbackLoader: 'style-loader',
+          loader: 'css-loader!sass-loader',
+        }),
       },
     ]
   },
