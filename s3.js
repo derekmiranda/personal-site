@@ -3,6 +3,7 @@ var AWS = require('aws-sdk');
 
 // Set credentials and region,
 // which can also go directly on the service client
+AWS.config.loadFromPath('./config.json');
 AWS.config.update({region: 'REGION', credentials: {/* */}});
 
 var s3 = new AWS.S3({apiVersion: '2006-03-01'});
