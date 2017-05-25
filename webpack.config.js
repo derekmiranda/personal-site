@@ -23,6 +23,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  target: 'node',
   plugins,
   module: {
     loaders: [
@@ -44,6 +45,10 @@ module.exports = {
           loader: 'css-loader!sass-loader',
         }),
       },
+      {
+        test: /\.json$/, 
+        loaders: ['json-loader'],
+      }
     ]
   },
   devServer: {
