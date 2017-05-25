@@ -13,7 +13,7 @@
     "react-dom": "^15.5.4"
   },
   "scripts": {
-    "postinstall": "yarn build",
+    "prestart": "if [ ! -d 'dist' ]; then yarn build; fi",
     "start": "node server",
     "devstart": "MODE=dev nodemon server",
     "build": "MODE=production webpack",
