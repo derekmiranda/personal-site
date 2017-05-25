@@ -16,7 +16,7 @@
     "prestart": "if [ ! -d 'dist' ]; then npm run build; fi",
     "start": "node server",
     "devstart": "MODE=dev nodemon server",
-    "build": "MODE=production webpack",
+    "build": "MODE=production node_modules/.bin/webpack",
     "watch": "webpack -w",
     "wds": "MODE=dev webpack-dev-server --progress"
   },
