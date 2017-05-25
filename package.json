@@ -14,7 +14,6 @@
     "react-dom": "^15.5.4"
   },
   "scripts": {
-    "prestart": "if [ ! -d 'dist' ]; then npm run build; fi",
     "start": "node server",
     "devstart": "MODE=dev nodemon server",
     "build": "MODE=production node_modules/.bin/webpack",
