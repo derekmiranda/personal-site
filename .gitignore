@@ -3,6 +3,11 @@ node_modules
 .DS_Store
 *.zip
 
+# Include only bundle.js and styles.css from webpack
+dist
+!**/bundle.js
+!**/styles.css
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
