@@ -1,17 +1,11 @@
 {
-  "name": "sample-react-app",
+  "name": "personal-site",
   "version": "1.0.0",
   "main": "server/index.js",
   "author": "Derek Miranda <derek.miranda.1992@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "aws-sdk": "^2.57.0",
-    "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "mongoose": "^4.9.2",
-    "prop-types": "^15.5.10",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
     "velocity-animate": "^1.5.0"
   },
   "scripts": {
@@ -25,11 +19,9 @@
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.24.0",
-    "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
-    "google-fonts-webpack-plugin": "^0.3.2",
     "json-loader": "^0.5.4",
     "node-sass": "^4.5.2",
     "nodemon": "^1.11.0",
