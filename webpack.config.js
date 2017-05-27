@@ -21,9 +21,9 @@ module.exports = {
   ],
   output: {
     filename: 'bundle.js',
+    publicPath: `http://127.0.0.1:${WDS_PORT}/`,
     path: path.resolve(__dirname, 'dist'),
   },
-  target: 'node',
   plugins,
   module: {
     loaders: [
@@ -51,9 +51,9 @@ module.exports = {
       }
     ]
   },
-  devServer: {
-    contentBase: './public',
-    inline: true,
-    hot: true,
-  },
+  // devServer: {
+  //   contentBase: './public',
+  //   inline: true,
+  //   hot: true,
+  // },
 }
