@@ -3,8 +3,8 @@
 
 body {
   font-family: Muli, Helvetica, sans-serif;
-  padding: 5% 10%;
   color: $main;
+  text-align: center;
 }
 
 h1 {
@@ -46,12 +46,28 @@ a:hover {
 }
 
 // Mobile - 320-425px
-#social {
-  font-size: 35px;
+
+// custom mobile header sizes
+@media only screen and (min-width: 320px) and (max-width:425px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
 }
 
 body {
-  text-align: center;
+  padding: 2% 10%;
+}
+
+#social {
+  font-size: 35px;
 }
 
 #main {
