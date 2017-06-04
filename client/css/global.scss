@@ -49,16 +49,11 @@ a:hover {
 
 // custom mobile header sizes
 @media only screen and (min-width: 320px) and (max-width:425px) {
-  h1 {
-    font-size: 25px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 17px;
+  $buttonConfig: 'h1' 22px, 'h2' 18px;
+  @each $tuple in $buttonConfig {
+      #{nth($tuple, 1)} {
+          font-size: nth($tuple, 2);
+      }
   }
 }
 
