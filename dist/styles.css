@@ -39,7 +39,6 @@ a:hover {
   font-size: 35px; }
 
 body {
-  padding: 20px;
   text-align: center; }
 
 #main {
@@ -50,5 +49,5 @@ body {
   #social {
     font-size: 40px; }
   #main {
-    margin: 150px auto;
+    margin: 80px auto;
     width: 80%; } }
