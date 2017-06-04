@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
-
-$main: #555;
-$accent: #5ed1ae;
-$colorChangeTime: 0.25s;
+@import 'variables';
 
 body {
   font-family: Muli, Helvetica, sans-serif;
@@ -40,14 +37,37 @@ a:hover {
   max-width: 400px;
 }
 
-@media only screen and (max-width: 450px) {
-  body {
-    padding: 15px;
-    text-align: center;
+#description {
+  text-align: justify;
+}
+
+#social {
+  margin: 0;
+}
+
+// Mobile - 320-425px
+#social {
+  font-size: 35px;
+}
+
+body {
+  padding: 20px;
+  text-align: center;
+}
+
+#main {
+  margin: auto;
+  width: 80%;
+}
+
+// Tablet - 768px+
+@media only screen and (min-width: 768px) {
+  #social {
+    font-size: 40px;
   }
 
   #main {
-    margin: auto;
+    margin: 150px auto;
     width: 80%;
   }
 }
