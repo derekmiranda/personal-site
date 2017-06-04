@@ -33,7 +33,7 @@ module.exports = {
         exclude: /node_modules/,
         include: [path.resolve(__dirname, './client')],
         query: {
-          presets: ['es2015', 'react']
+          presets: ['es2015']
         }
       },
       {
