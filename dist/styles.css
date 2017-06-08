@@ -1,4 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Muli);body {
+@import url(https://fonts.googleapis.com/css?family=Muli);html, body {
+  max-height: 100%; }
+
+body {
   font-family: Muli, Helvetica, sans-serif;
   color: #555;
   text-align: center; }
@@ -29,6 +32,9 @@ a:hover {
   width: 35%;
   max-width: 400px; }
 
+#pixelme {
+  border-radius: 50%; }
+
 #description {
   text-align: justify; }
 
@@ -39,21 +45,21 @@ a:hover {
   h1 {
     font-size: 22px; }
   h2 {
-    font-size: 18px; } }
-
-body {
-  padding: 2% 10%; }
-
-#social {
-  font-size: 35px; }
+    font-size: 18px; }
+  body {
+    font-size: 14px; } }
 
 #main {
-  margin: auto;
+  margin: 5% auto;
   width: 80%; }
+
+#pixelme {
+  max-height: 20%;
+  width: auto; }
+
+#social {
+  font-size: 30px; }
 
 @media only screen and (min-width: 768px) {
   #social {
-    font-size: 40px; }
-  #main {
-    margin: 80px auto;
-    width: 80%; } }
+    font-size: 40px; } }

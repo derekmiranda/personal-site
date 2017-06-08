@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 @import 'variables';
 
+html, body {
+  max-height: 100%;
+}
+
 body {
   font-family: Muli, Helvetica, sans-serif;
   color: $main;
@@ -37,6 +41,10 @@ a:hover {
   max-width: 400px;
 }
 
+#pixelme {
+  border-radius: 50%;
+}
+
 #description {
   text-align: justify;
 }
@@ -47,37 +55,38 @@ a:hover {
 
 // Mobile - 320-425px
 
-// custom mobile header sizes
+// custom mobile font sizes
 @media only screen and (max-width:425px) {
+
   $buttonConfig: 'h1' 22px, 'h2' 18px;
   @each $tuple in $buttonConfig {
       #{nth($tuple, 1)} {
           font-size: nth($tuple, 2);
       }
   }
-}
 
-body {
-  padding: 2% 10%;
-}
-
-#social {
-  font-size: 35px;
+  body {
+    font-size: 14px;
+  }
 }
 
 #main {
-  margin: auto;
+  margin: 5% auto;
   width: 80%;
 }
 
-// Tablet - 768px+
+#pixelme {
+  max-height: 20%;
+  width: auto;
+}
+
+#social {
+  font-size: 30px;
+}
+
+// Tablet and bigger - 768px+
 @media only screen and (min-width: 768px) {
   #social {
     font-size: 40px;
-  }
-
-  #main {
-    margin: 80px auto;
-    width: 80%;
   }
 }
