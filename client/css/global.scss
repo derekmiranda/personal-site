@@ -48,7 +48,7 @@ a:hover {
 // Mobile - 320-425px
 
 // custom mobile header sizes
-@media only screen and (min-width: 320px) and (max-width:425px) {
+@media only screen and (max-width:425px) {
   $buttonConfig: 'h1' 22px, 'h2' 18px;
   @each $tuple in $buttonConfig {
       #{nth($tuple, 1)} {
