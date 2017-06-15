@@ -47,6 +47,7 @@ a:hover {
 
 #social {
   margin: 0;
+  letter-spacing: .1em;
 }
 
 // Mobile - 320-425px
@@ -66,10 +67,6 @@ body {
   width: auto;
 }
 
-#social {
-  font-size: 30px;
-}
-
 // small to medium screens
 @media only screen and (min-width:$smallScreenCutoff) and (max-width: $mediumScreenCutoff) {
   body {
@@ -78,22 +75,18 @@ body {
 
   #main {
     margin: 5% auto;
-    max-width: 40%;
+    max-width: 60%;
   }
 }
 
 // Tablets and bigger
 @media only screen and (min-width: $mediumScreenCutoff) {
   body {
-    font-size: 150%;
+    font-size: 120%;
   }
 
   #main {
     margin: 5% auto;
     max-width: 40%;
-  }
-
-  #social {
-    font-size: 40px;
   }
 }
