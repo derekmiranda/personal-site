@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 @import 'variables';
 
-html, body {
-  max-height: 100%;
-}
-
 body {
   font-family: Muli, Helvetica, sans-serif;
   color: $main;
@@ -13,7 +9,11 @@ body {
 
 h1 {
   font-family: Futura, "Open Sans", Helvetica, sans-serif;
-  font-size: 220%;
+}
+
+// elements starting transparent
+#pixelme, #header, #description, #social {
+  opacity: 0;
 }
 
 @keyframes mainColor {
