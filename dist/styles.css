@@ -52,14 +52,14 @@ body {
 #social {
   font-size: 30px; }
 
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 425px) and (max-width: 800px) {
   body {
     font-size: 100%; }
   #main {
     margin: 5% auto;
     max-width: 40%; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   body {
     font-size: 150%; }
   #main {
