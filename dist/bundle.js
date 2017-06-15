@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "3bd221fd00c0fcbca5ae"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "eabb4cc88ad9310bc050"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -726,13 +726,20 @@ var _velocityAnimate2 = _interopRequireDefault(_velocityAnimate);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var animOrder = ['pixelme', 'header', 'description', 'social'];
+var baseFadeInTime = 1500;
+var fadeInStep = 500;
+
 document.addEventListener('readystatechange', function () {
 
   if (document.readyState === 'interactive') {
-    var main = document.getElementById('main');
 
-    (0, _velocityAnimate2.default)(main, 'fadeIn', {
-      duration: 2000
+    animOrder.forEach(function (item, i) {
+      var elem = document.getElementById(item);
+
+      (0, _velocityAnimate2.default)(elem, 'fadeIn', {
+        duration: baseFadeInTime + i * fadeInStep
+      });
     });
   }
 });
