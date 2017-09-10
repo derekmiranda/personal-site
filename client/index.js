@@ -7,21 +7,21 @@ const animOrder = [
   'description',
   'social',
 ];
-const baseFadeInTime = 1500;
-const fadeInStep = 500;
+const BASE_FADE_IN_TIME = 1500;
+const FADE_IN_STEP = 500;
 
-document.addEventListener('readystatechange', function () {
-  
+function main() {
   if (document.readyState === 'interactive') {
 
     animOrder.forEach((item, i) => {
       const elem = document.getElementById(item);
 
       Velocity(elem, 'fadeIn', {
-        duration: baseFadeInTime + i*fadeInStep,
+        duration: BASE_FADE_IN_TIME + i * FADE_IN_STEP,
       });
     });
 
   }
+}
 
-});
+document.addEventListener('readystatechange', main);
