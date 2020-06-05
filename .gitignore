@@ -4,11 +4,6 @@ node_modules
 *.zip
 
 # Include only bundle.js and styles.css from webpack
+.cache
 dist
-!**/bundle.js
-!**/styles.css
 
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
