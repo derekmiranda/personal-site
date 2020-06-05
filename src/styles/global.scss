@@ -9,19 +9,27 @@ body {
 
 h1 {
   font-family: Futura, "Open Sans", Helvetica, sans-serif;
+  margin: 0;
 }
 
 // elements starting transparent
-#pixelme, #header, #description, #social {
+#pixelme,
+#header,
+#description,
+#social {
   opacity: 0;
 }
 
 @keyframes mainColor {
-  100% {color: $main}
+  100% {
+    color: $main
+  }
 }
 
 @keyframes accentColor {
-  100% {color: $accent}
+  100% {
+    color: $accent
+  }
 }
 
 a {
@@ -58,13 +66,21 @@ body {
 }
 
 #main {
-  margin: 5% auto;
+  margin: 50px auto;
   max-width: 80%;
 }
 
 #pixelme {
   max-height: 20%;
   width: auto;
+}
+
+.name {
+  margin-top: 20px;
+}
+
+.title {
+  margin: 0;
 }
 
 // small to medium screens
@@ -74,7 +90,6 @@ body {
   }
 
   #main {
-    margin: 5% auto;
     max-width: 60%;
   }
 }
@@ -86,7 +101,6 @@ body {
   }
 
   #main {
-    margin: 5% auto;
     max-width: 40%;
   }
 }

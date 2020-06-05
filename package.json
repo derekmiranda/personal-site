@@ -8,7 +8,7 @@
     "velocity-animate": "^1.5.0"
   },
   "scripts": {
-    "start": "parcel src/index.html",
+    "start": "parcel --host 0.0.0.0 src/index.html",
     "dist": "parcel build src/index.html"
   },
   "devDependencies": {
