@@ -1,7 +1,5 @@
 import Velocity from 'velocity-animate';
 
-import style from './css/global.scss';
-
 const ANIM_ORDER = [
   'pixelme',
   'header',
