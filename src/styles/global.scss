@@ -7,9 +7,24 @@ body {
   text-align: center;
 }
 
-h1 {
+h1, h2 {
   font-family: Futura, "Open Sans", Helvetica, sans-serif;
   margin: 0;
+}
+
+a {
+	text-decoration: underline;
+	transition: color 0.5s;
+
+	&:hover {
+		color: $accent;
+	}
+}
+
+.description {
+	margin: $gutter auto;
+	width: 550px;
+	max-width: 100%;
 }
 
 // elements starting transparent
@@ -49,8 +64,13 @@ a:hover {
   border-radius: 50%;
 }
 
-#description {
+#description,
+.description {
   text-align: justify;
+}
+
+.description {
+  width: 500px;
 }
 
 #social {
@@ -76,6 +96,10 @@ body {
 }
 
 .name {
+  margin-top: 20px;
+}
+
+.page-title {
   margin-top: 20px;
 }
 

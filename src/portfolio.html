@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="styles/portfolio.scss">
+</head>
+
+<body>
+	<h1 class="page-title">Portfolio</h1>
+	<p class="description">My experience is split among working with web applications and frontend libraries. You can see
+		some of my code in detail on my <a href="https://github.com/derekmiranda">Github</a>. Here are a few selected works:
+	</p>
+	<div class="portfolio-entry">
+		<a class="portfolio-entry__img" href="/pure-destiny">
+			<img src="/assets/images/pure-destiny.jpg">
+		</a>
+		<div class="portfolio-entry__desc">
+			<h2 class="portfolio-entry__title">Pure Destiny</h2>
+			<p class="portfolio-entry__copy">
+				This was a site experience built to promote the show Pure on the WGN network. It's a personality quiz but it's a
+				bit more open-ended. Instead of just answering questions, you'll find words that appeal most to you in a word
+				search or choose a color that best suits you. At the end, you can see whether you align with a just person like
+				Noah or someone more ruthless like Voss.
+				<br><br>
+				This was a fun project to build since there were many different components to build such as the word search and
+				the color slider. It was also a good challenge to have a similarly smooth experience on mobile.
+			</p>
+		</div>
+	</div>
+	<div class="portfolio-entry">
+		<a class="portfolio-entry__img" href="https://github.com/ff0000-ad-tech">
+			<img src="/assets/images/fat.png">
+		</a>
+		<div class="portfolio-entry__desc">
+			<h2 class="portfolio-entry__title">FF0000 Ad Tech Library</h2>
+			<p class="portfolio-entry__copy">
+				This is the open-source library I'd maintained throughout my time at 160over90 (formerly known as RED). The
+				FF0000
+				Ad Tech library (which we affectionately referred to as "FAT") is a frontend framework for building lightweight
+				but feature-packed ads. It has a custom Webpack process which inlines assets into an FBA payload file to reduce
+				request overhead as well as canvas animation, a date library, and more.
+				<br><br>
+				My main contributions were building Webpack plugins and loaders to handle framework-specific parsing as well as traversing the Webpack dependency graph to gather binary files like images and fonts and put them into one payload file.
+			</p>
+		</div>
+	</div>
+</body>
+
+</html>
