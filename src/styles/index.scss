@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Muli');
-@import url('https://fonts.googleapis.com/css?family=Patua One');
-@import 'variables';
-// @import 'global';
+@import url("https://fonts.googleapis.com/css?family=Muli");
+@import url("https://fonts.googleapis.com/css?family=Patua One");
+@import "variables";
+@import "global";
 
 html,
 body {
@@ -40,26 +40,6 @@ a.link {
   max-width: 100%;
 }
 
-// elements starting transparent
-#pixelme,
-#header,
-#description,
-#social {
-  opacity: 0;
-}
-
-@keyframes mainColor {
-  100% {
-    color: $main
-  }
-}
-
-@keyframes accentColor {
-  100% {
-    color: $accent
-  }
-}
-
 a.social {
   color: $main;
   text-decoration: none;
@@ -87,7 +67,7 @@ a.social {
 
 #social {
   margin: 0;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   font-size: 120%;
 }
 
@@ -100,7 +80,7 @@ a.social {
   align-items: center;
 
   &::before {
-    content: ' ';
+    content: " ";
     display: block;
     height: 40px;
   }
@@ -113,7 +93,7 @@ a.social {
 
 .name {
   font-size: 170%;
-  margin-top: map-get($top-margins, 'smallest');
+  margin-top: map-get($top-margins, "smallest");
 }
 
 .title {
@@ -122,7 +102,7 @@ a.social {
 }
 
 // small screen or bigger
-@include respond-to('small') {
+@include respond-to("small") {
   body {
     font-size: 120%;
   }
@@ -131,7 +111,7 @@ a.social {
     max-width: 40%;
 
     &::before {
-      content: ' ';
+      content: " ";
       display: block;
       height: 100px;
     }
@@ -139,7 +119,7 @@ a.social {
 }
 
 // Tablets and bigger
-@include respond-to('medium') {
+@include respond-to("medium") {
   body {
     font-size: 150%;
   }
@@ -148,7 +128,7 @@ a.social {
     max-width: 40%;
 
     &::before {
-      content: ' ';
+      content: " ";
       display: block;
       height: 100px;
     }

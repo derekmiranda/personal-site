@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Muli');
-@import 'variables';
+@import url("https://fonts.googleapis.com/css?family=Muli");
+@import "variables";
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -10,63 +11,45 @@ body {
   color: $main;
   text-align: center;
   margin: 0;
+
+  & * {
+    animation: fadeIn 1.5s ease-out 1;
+  }
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: Futura, "Open Sans", Helvetica, sans-serif;
   margin: 0;
 }
 
 a {
-	text-decoration: underline;
-	transition: color 0.5s;
+  text-decoration: underline;
+  transition: color 0.5s;
 
-	&:hover {
-		color: $accent;
-	}
-}
-
-.description {
-	margin: $gutter auto;
-	width: 550px;
-  max-width: 100%;
-  
-  @include respond-to('medium') {
-    margin: #{$gutter * 2} auto;
-  } 
-}
-
-// elements starting transparent
-#pixelme,
-#header,
-#description,
-#social {
-  opacity: 0;
-}
-
-@keyframes mainColor {
-  100% {
-    color: $main
+  &:hover {
+    color: $accent;
   }
 }
 
-@keyframes accentColor {
-  100% {
-    color: $accent
+.description {
+  margin: $gutter auto;
+  width: 550px;
+  max-width: 100%;
+
+  @include respond-to("medium") {
+    margin: #{$gutter * 2} auto;
   }
 }
 
 a {
   color: $main;
   text-decoration: none;
-  -webkit-transition: color $colorChangeTime;
   transition: color $colorChangeTime;
-}
 
-a:hover {
-  color: $accent;
-  -webkit-transition: color $colorChangeTime;
-  transition: color $colorChangeTime;
+  &:hover {
+    color: $accent;
+  }
 }
 
 #pixelme {
@@ -84,7 +67,7 @@ a:hover {
 
 #social {
   margin: 0;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 // Mobile - 320-425px
@@ -108,7 +91,7 @@ body {
 }
 
 .page-title {
-  margin-top: map-get($map: $top-margins, $key: 'smallest');
+  margin-top: map-get($map: $top-margins, $key: "smallest");
 }
 
 .title {
@@ -116,13 +99,13 @@ body {
 }
 
 // small to medium screens
-@include respond-to('small') {
+@include respond-to("small") {
   body {
     font-size: 100%;
   }
 
   .page-title {
-    margin-top: map-get($map: $top-margins, $key: 'small');
+    margin-top: map-get($map: $top-margins, $key: "small");
   }
 
   #main {
@@ -131,7 +114,7 @@ body {
 }
 
 // Tablets and bigger
-@include respond-to('medium') {
+@include respond-to("medium") {
   body {
     font-size: 150%;
   }

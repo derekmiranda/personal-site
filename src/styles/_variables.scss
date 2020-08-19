@@ -1,21 +1,21 @@
 $main: #555;
-$accent: #3DD983;
+$accent: #3dd983;
 $colorChangeTime: 0.25s;
 $gutter: 20px;
 $smallScreenCutoff: 425px;
 $mediumScreenCutoff: 800px;
 
 $breakpoints: (
-  'small':  767px,
-  'medium': 992px,
-  'large':  1200px
+  "small": 767px,
+  "medium": 992px,
+  "large": 1200px,
 ) !default;
 
 $top-margins: (
-  'smallest': 20px,
-  'small':  40px,
-  'medium': 100px,
-  'large':  100px
+  "smallest": 20px,
+  "small": 40px,
+  "medium": 100px,
+  "large": 100px,
 ) !default;
 
 /// Mixin to manage responsive breakpoints
@@ -30,10 +30,20 @@ $top-margins: (
       @content;
     }
   }
- 
+
   // If the key doesn't exist in the map
   @else {
     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
         + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+/* animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
