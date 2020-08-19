@@ -1,4 +1,6 @@
-import Velocity from 'velocity-animate';
+const {
+  animateInElements
+} = require("./lib");
 
 const ANIM_ORDER = [
   'pixelme',
@@ -6,25 +8,16 @@ const ANIM_ORDER = [
   'description',
   'social',
 ];
-const BASE_FADE_IN_TIME = 1500;
-const FADE_IN_STEP = 500;
+
+const els = []
 
 function main() {
   if (document.readyState === 'interactive') {
-    animateInElements();
+    ANIM_ORDER.forEach(id => {
+      els.push(document.getElementById(id))
+    })
+    animateInElements(els);
   }
-}
-
-function animateInElements() {
-  ANIM_ORDER.forEach(animateInElement);
-}
-
-function animateInElement(item, i) {
-  const elem = document.getElementById(item);
-
-  Velocity(elem, 'fadeIn', {
-    duration: BASE_FADE_IN_TIME + i * FADE_IN_STEP,
-  });
 }
 
 document.addEventListener('readystatechange', main);
