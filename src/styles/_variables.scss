@@ -1,5 +1,5 @@
 $main: #555;
-$accent: #5ed1ae;
+$accent: #3DD983;
 $colorChangeTime: 0.25s;
 $gutter: 20px;
 $smallScreenCutoff: 425px;
@@ -9,6 +9,13 @@ $breakpoints: (
   'small':  767px,
   'medium': 992px,
   'large':  1200px
+) !default;
+
+$top-margins: (
+  'smallest': 20px,
+  'small':  40px,
+  'medium': 100px,
+  'large':  100px
 ) !default;
 
 /// Mixin to manage responsive breakpoints

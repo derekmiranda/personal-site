@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 @import 'variables';
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: Muli, Helvetica, sans-serif;
   color: $main;
   text-align: center;
+  margin: 0;
 }
 
 h1, h2 {
@@ -24,7 +29,11 @@ a {
 .description {
 	margin: $gutter auto;
 	width: 550px;
-	max-width: 100%;
+  max-width: 100%;
+  
+  @include respond-to('medium') {
+    margin: #{$gutter * 2} auto;
+  } 
 }
 
 // elements starting transparent
@@ -86,8 +95,12 @@ body {
 }
 
 #main {
-  margin: 50px auto;
+  margin: 50px auto 0;
   max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #pixelme {
@@ -95,12 +108,8 @@ body {
   width: auto;
 }
 
-.name {
-  margin-top: 20px;
-}
-
 .page-title {
-  margin-top: 20px;
+  margin-top: map-get($map: $top-margins, $key: 'smallest');
 }
 
 .title {
@@ -108,9 +117,13 @@ body {
 }
 
 // small to medium screens
-@media only screen and (min-width:$smallScreenCutoff) and (max-width: $mediumScreenCutoff) {
+@include respond-to('small') {
   body {
     font-size: 100%;
+  }
+
+  .page-title {
+    margin-top: map-get($map: $top-margins, $key: 'small');
   }
 
   #main {
@@ -119,12 +132,16 @@ body {
 }
 
 // Tablets and bigger
-@media only screen and (min-width: $mediumScreenCutoff) {
+@include respond-to('medium') {
   body {
     font-size: 150%;
   }
 
   #main {
     max-width: 40%;
+  }
+
+  #description {
+    width: 500px;
   }
 }
