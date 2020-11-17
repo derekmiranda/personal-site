@@ -43,6 +43,13 @@ a.social {
   font-size: 120%;
 }
 
+.social-cta {
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 0;
+  margin-bottom: $gutter;
+}
+
 // Mobile
 #main {
   margin: 0 auto;
@@ -71,6 +78,8 @@ a.social {
 .title {
   font-size: 120%;
   margin: 0;
+  font-weight: normal;
+  font-style: italic;
 }
 
 // small screen or bigger
