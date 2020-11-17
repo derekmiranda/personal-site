@@ -2,11 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Patua One");
 @import "variables";
 
-html,
-body {
-  height: 100%;
-}
-
 h1,
 h2,
 #social {
@@ -32,11 +27,19 @@ h2 {
 }
 
 a {
-  text-decoration: underline;
-  transition: color 0.5s;
+  color: $main;
+  text-decoration: none;
+  transition: color $colorChangeTime;
+}
+
+a.link {
+  color: $main;
+  text-decoration: none;
+  background-color: $accent;
+  transition: all 0.5s;
 
   &:hover {
-    color: $accent;
+    background-color: $accentHover;
   }
 }
 
@@ -47,16 +50,6 @@ a {
 
   @include respond-to("medium") {
     margin: #{$gutter * 2} auto;
-  }
-}
-
-a {
-  color: $main;
-  text-decoration: none;
-  transition: color $colorChangeTime;
-
-  &:hover {
-    color: $accent;
   }
 }
 

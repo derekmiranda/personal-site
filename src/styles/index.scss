@@ -6,17 +6,6 @@ body {
   height: 100%;
 }
 
-a.link {
-  color: $main;
-  text-decoration: none;
-  background-color: $accent;
-  transition: all 0.5s;
-
-  &:hover {
-    background-color: $accentHover;
-  }
-}
-
 .description {
   margin: $gutter auto;
   width: 550px;
