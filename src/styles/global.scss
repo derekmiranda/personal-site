@@ -26,6 +26,21 @@ h2 {
   margin: 0;
 }
 
+.content-container {
+  margin: 5% auto;
+  width: 80%;
+
+  @include respond-to("medium") {
+    width: 700px;
+    margin: 50px auto;
+  }
+
+  @include respond-to("large") {
+    width: 1000px;
+    margin: 50px auto;
+  }
+}
+
 a {
   color: $main;
   text-decoration: none;

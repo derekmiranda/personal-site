@@ -4,21 +4,6 @@ p {
   text-align: left;
 }
 
-.content-container {
-  margin: 5% auto;
-  width: 80%;
-
-  @include respond-to("medium") {
-    width: 700px;
-    margin: 50px auto;
-  }
-
-  @include respond-to("large") {
-    width: 1000px;
-    margin: 50px auto;
-  }
-}
-
 .navbar {
   width: 100%;
   text-align: left;
