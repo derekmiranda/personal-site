@@ -45,6 +45,11 @@ hr {
     padding: #{2 * $gutter} 0;
   }
 
+  &__subtitle {
+    font-weight: normal;
+    font-style: italic;
+  }
+
   &__desc,
   &__copy {
     max-width: 100%;
