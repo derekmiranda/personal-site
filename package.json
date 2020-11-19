@@ -5,6 +5,7 @@
   "author": "Derek Miranda <derek.miranda.1992@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "glslCanvas": "^0.1.7",
     "velocity-animate": "^1.5.0"
   },
   "scripts": {
