@@ -4,24 +4,6 @@ p {
   text-align: left;
 }
 
-.navbar {
-  width: 100%;
-  text-align: left;
-
-  &--top {
-    margin-bottom: $gutter;
-  }
-
-  &--bottom {
-    margin-top: $gutter;
-  }
-}
-
-.nav-link {
-  font-size: 120%;
-  margin: 0;
-}
-
 .page-title {
   margin: 0;
 }
