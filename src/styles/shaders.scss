@@ -1,12 +1,44 @@
 @import "global";
 
+html,
+body {
+  height: 100%;
+}
+
 .page-title {
   margin: 0;
 }
 
-.glslCanvas {
-  width: 400px;
-  height: 400px;
+.gallery {
+  width: 250px;
+  margin: 0 auto;
+
+  @include respond-to("medium") {
+    width: 550px;
+  }
+}
+
+.canvas-container {
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  height: 250px;
   border: 1px solid black;
   border-radius: 10px;
+
+  & > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s;
+    border-radius: 10px;
+  }
+
+  & > canvas {
+    border-radius: 10px;
+  }
+}
+
+.img-hide {
+  opacity: 0;
 }
