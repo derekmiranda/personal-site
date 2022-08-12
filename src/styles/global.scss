@@ -100,10 +100,6 @@ a.link {
   margin: $gutter auto;
   width: 550px;
   max-width: 100%;
-
-  @include respond-to("medium") {
-    margin: #{$gutter * 2} auto;
-  }
 }
 
 #pixelme {

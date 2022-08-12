@@ -24,7 +24,10 @@ hr {
 
   @include respond-to("large") {
     flex-direction: row;
-    padding: #{2 * $gutter} 0;
+  }
+
+  &__title {
+    font-weight: normal;
   }
 
   &__subtitle {
