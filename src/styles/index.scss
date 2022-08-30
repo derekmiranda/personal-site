@@ -8,7 +8,6 @@ body {
 
 .description {
   margin: $gutter auto;
-  width: 550px;
   max-width: 100%;
 }
 
@@ -32,10 +31,6 @@ a.social {
 #description,
 .description {
   text-align: justify;
-}
-
-.description {
-  width: 500px;
 }
 
 #social {
