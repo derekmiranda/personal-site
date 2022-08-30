@@ -47,11 +47,15 @@ hr {
   &__img {
     display: block;
     border: 1px solid $main;
-    border-radius: 10px;
+    border-radius: 50%;
     width: 300px;
     height: 300px;
     margin-bottom: 20px;
     transition: all 0.7s;
+
+    &:hover {
+      border-radius: 10px;
+    }
 
     @include respond-to("medium") {
       width: 400px;
