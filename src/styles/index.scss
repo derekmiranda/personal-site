@@ -26,6 +26,11 @@ a.social {
 #headshot {
   width: 300px;
   border-radius: 50%;
+  transition: border-radius 0.7s;
+
+  &:hover {
+    border-radius: 10px;
+  }
 }
 
 #description,
