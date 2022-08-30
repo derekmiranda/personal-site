@@ -18,10 +18,7 @@ body {
   color: $main;
   text-align: center;
   margin: 0;
-
-  & * {
-    animation: fadeIn 1.5s ease-out 1;
-  }
+  animation: fadeIn 1s ease-in-out;
 }
 
 h1,
@@ -102,10 +99,6 @@ a.link {
   max-width: 100%;
 }
 
-#pixelme {
-  border-radius: 50%;
-}
-
 #description,
 .description {
   text-align: justify;
@@ -116,12 +109,6 @@ a.link {
 }
 
 // Mobile - 320-425px
-
-// custom mobile font sizes
-body {
-  font-size: 80%;
-}
-
 #main {
   margin: 50px auto 0;
   max-width: 80%;
@@ -130,9 +117,10 @@ body {
   align-items: center;
 }
 
-#pixelme {
+#headshot {
   max-height: 20%;
   width: auto;
+  background-color: #78b5d0;
 }
 
 .page-title {
