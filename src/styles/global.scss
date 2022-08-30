@@ -72,6 +72,7 @@ h3 {
 }
 
 .nav-link {
+  position: fixed;
   font-size: 120%;
   margin: 0;
 }
@@ -95,17 +96,12 @@ a.link {
 
 .description {
   margin: $gutter auto;
-  width: 550px;
   max-width: 100%;
 }
 
 #description,
 .description {
   text-align: justify;
-}
-
-.description {
-  width: 500px;
 }
 
 // Mobile - 320-425px
