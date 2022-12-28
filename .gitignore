@@ -6,4 +6,4 @@ node_modules
 # Include only bundle.js and styles.css from webpack
 .cache
 dist
-
+.parcel-cache
