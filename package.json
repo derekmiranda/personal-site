@@ -1,7 +1,6 @@
 {
   "name": "personal-site",
   "version": "1.0.0",
-  "main": "server/index.js",
   "author": "Derek Miranda <derek.miranda.1992@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -9,12 +8,12 @@
     "velocity-animate": "^1.5.0"
   },
   "scripts": {
-    "start": "parcel --host 0.0.0.0 --open` src/index.html",
-    "start:dev": "parcel --host 0.0.0.0 src/dev/index.html",
-    "start:shaders": "parcel --host 0.0.0.0 src/shaders/index.html",
-    "dist": "sh rebuild"
+    "start": "parcel src/**/*.html --host 0.0.0.0 --open",
+    "dist": "parcel build src/**/*.html"
   },
   "devDependencies": {
+    "@parcel/transformer-glsl": "^2.8.2",
+    "@parcel/transformer-sass": "^2.8.2",
     "glslify-bundle": "^5.1.1",
     "glslify-deps": "^1.3.1",
     "parcel": "^2.8.2",
