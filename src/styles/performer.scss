@@ -8,31 +8,22 @@ p {
   margin: 0;
 }
 
-hr {
-  width: 200px;
-  margin: 0 auto;
-}
-
 .portfolio-container {
-  width: 1000px;
-  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio-entry {
   display: flex;
-  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
   padding: $gutter 0;
 
-  @include respond-to("large") {
-    flex-direction: row;
-  }
-
   &__title {
     font-weight: normal;
+    margin-bottom: $gutter;
   }
 
   &__subtitle {

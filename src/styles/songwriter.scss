@@ -8,31 +8,25 @@ p {
   margin: 0;
 }
 
-hr {
-  width: 200px;
-  margin: 0 auto;
-}
-
 .portfolio-container {
-  width: 1000px;
-  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .portfolio-entry {
   display: flex;
-  width: 100%;
   flex-direction: column;
+  flex-basis: auto;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
   padding: $gutter 0;
-
-  @include respond-to("large") {
-    flex-direction: row;
-  }
+  margin-left: $gutter / 2;
+  margin-right: $gutter / 2;
 
   &__title {
     font-weight: normal;
+    margin-bottom: $gutter;
   }
 
   &__subtitle {
@@ -83,4 +77,8 @@ hr {
       }
     }
   }
+}
+
+.cta {
+  display: inline-block;
 }
