@@ -21,8 +21,8 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: $gutter 0;
-  margin-left: $gutter / 2;
-  margin-right: $gutter / 2;
+  margin-left: calc($gutter / 2);
+  margin-right: calc($gutter / 2);
 
   &__title {
     font-weight: normal;
