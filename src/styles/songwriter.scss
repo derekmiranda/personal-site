@@ -11,15 +11,18 @@ p {
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .portfolio-entry {
   display: flex;
   flex-direction: column;
+  flex-basis: auto;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
   padding: $gutter 0;
+  margin-left: $gutter / 2;
+  margin-right: $gutter / 2;
 
   &__title {
     font-weight: normal;
@@ -74,4 +77,8 @@ p {
       }
     }
   }
+}
+
+.cta {
+  display: inline-block;
 }
