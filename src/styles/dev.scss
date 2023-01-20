@@ -4,8 +4,8 @@ p {
   text-align: left;
 }
 
-.page-title {
-  margin: 0;
+.portfolio-title {
+  @extend %portfolio-title;
 }
 
 hr {
@@ -14,8 +14,7 @@ hr {
 }
 
 .portfolio-container {
-  width: 1000px;
-  margin: auto;
+  @extend %portfolio-container;
 }
 
 .portfolio-entry {
