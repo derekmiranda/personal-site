@@ -4,8 +4,8 @@ p {
   text-align: left;
 }
 
-.page-title {
-  margin: 0;
+.portfolio-title {
+  @extend %portfolio-title;
 }
 
 .portfolio-container {

@@ -48,3 +48,16 @@ $top-margins: (
     opacity: 1;
   }
 }
+
+%portfolio-title {
+  margin: 0;
+  margin-top: 60px;
+}
+
+%portfolio-container {
+  margin: auto;
+
+  @include respond-to("large") {
+    width: 1000px;
+  }
+}
