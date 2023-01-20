@@ -42,21 +42,6 @@ h3 {
     width: 1160px;
     margin: 50px auto;
   }
-
-  &--fit {
-    @include respond-to("medium") {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      margin: 0 auto;
-
-      & > *:first-child {
-        margin-top: -40px;
-      }
-    }
-  }
 }
 
 .navbar {
@@ -121,10 +106,6 @@ a.link {
   background-color: #78b5d0;
 }
 
-.page-title {
-  margin-top: map-get($map: $top-margins, $key: "smallest");
-}
-
 .page-subtitle {
   font-size: 110%;
   font-weight: normal;
@@ -139,10 +120,6 @@ a.link {
 @include respond-to("small") {
   body {
     font-size: 100%;
-  }
-
-  .page-title {
-    margin-top: map-get($map: $top-margins, $key: "small");
   }
 
   #main {

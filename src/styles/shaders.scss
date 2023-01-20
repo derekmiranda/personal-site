@@ -6,7 +6,7 @@ body {
 }
 
 .page-title {
-  margin: 0;
+  @extend %portfolio-title;
 }
 
 .gallery {
@@ -15,6 +15,12 @@ body {
 
   @include respond-to("small") {
     width: 550px;
+  }
+}
+
+.description {
+  &--center {
+    text-align: center;
   }
 }
 
