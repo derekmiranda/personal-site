@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<style>
+		#main {
+			text-align: center;
+			margin: 40px auto;
+			height: 360px;
+		}
+
+		#controls {
+			width: 350px;
+			margin: auto;
+			text-align: left;
+			font-size: 2rem;
+		}
+
+		#controls h1 {
+			font-size: 3rem;
+		}
+
+		.canvas {
+			display: inline;
+		}
+	</style>
+	<title>Video in Canvas</title>
+</head>
+
+<body>
+	<video id="video" style="display: none;" playsinline></video>
+	<main id="main">
+		<canvas id="canvas" class="canvas" width="360"
+			height="360"></canvas>
+		<div id="controls">
+			<h1>Video Effects ✨</h1>
+			<div>
+				<input type="radio" id="rgb-delay" name="effect" value="rgb-delay" checked>
+				<label for="rgb-delay">RGB Delay</label>
+			</div>
+			<div>
+				<input type="radio" id="dots" name="effect" value="dots">
+				<label for="dots">Dots</label>
+			</div>
+			<div>
+				<input type="radio" id="line-bias" name="effect" value="line-bias">
+				<label for="line-bias">Line Glitch</label>
+			</div>
+			<div>
+				<input type="radio" id="default" name="effect" value="default">
+				<label for="default">Default</label>
+			</div>
+		</div>
+	</main>
+<script type="text/javascript" src="main.js"></script></body>
+
+
+</html>
